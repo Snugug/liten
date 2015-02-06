@@ -50,10 +50,8 @@ function string_src(filename, string) {
 // Polyfills
 //////////////////////////////
 var polyfills = [
-  'Object.getPrototypeOf',
-  'requestAnimationFrame',
   'Event.DOMContentLoaded',
-  'getComputedStyle',
+  'Element.prototype.classList',
   'Array.prototype.forEach'
 ];
 
