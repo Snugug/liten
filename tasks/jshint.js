@@ -27,7 +27,7 @@ module.exports = function (gulp, lintPaths) {
       .pipe(reload({stream: true}));
   });
 
-  gulp.task('jshint--dev', function () {
+  gulp.task('jshint:watch', function () {
     lintPaths = lintPaths || toLint;
 
     gulp.watch(lintPaths, ['jshint']);
