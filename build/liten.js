@@ -28,7 +28,7 @@
 
     if (selector) {
       nodeList = d.querySelectorAll(selector);
-
+      console.log(nodeList);
       nodes = Array.prototype.slice.call(nodeList);
     }
 
@@ -180,7 +180,7 @@
   //////////////////////////////
   // We only ever want one instance of state
   //////////////////////////////
-  Liten = Liten || new LitenStruct();
+  Liten = Liten || LitenStruct;
 
   //////////////////////////////
   // All of the various exports!
